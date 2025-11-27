@@ -29,16 +29,8 @@ require("lazy").setup({
     end,
   },
   {
-    "andweeb/presence.nvim",
-    config = function()
-	require("presence").setup({
-		auto_update = true,
-		neovim_image_text = "The One True Text Editor",
-		main_image = "neovim",
-		enable_line_number = true,
-		editing_text = "Editing %s",
-		workspace_text = "Working on %s",
-	})
-    end,
+      "https://codeberg.org/grafcube/suedit.nvim",
+      dependencies = "akinsho/toggleterm.nvim",
+      opts = { cmd = "doas" }
   }
 })
